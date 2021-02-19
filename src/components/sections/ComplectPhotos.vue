@@ -5,7 +5,7 @@
                 <div class="col-12">
                     <p class="my-head-text">комплект ваших фотографий </p>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-lg-7 col-xl-7">
                     <div class="complex-photos-texts">
                         <p>
                             Мы планируем отправить наложенным платежом этот комплект на ваш домашний адрес, который
@@ -23,13 +23,13 @@
                             вариант.
                             Если вам ничего не нужно, пожалуйста нажмите на кнопку внизу.
                         </p>
-                        <Button bgcolor="bg-red" @toggleModal='showModalFunc' class="mr-30" value="скачать"/>
-                        <Button bgcolor="bg-blue" value="отказаться"/>
+                        <Button bgcolor="bg-red" @toggleModal='showModalFunc' class="mr-30 d-flex" value="скачать"/>
+                        <Button bgcolor="bg-blue" value="отказаться" class="d-flex"/>
                     </div>
 
 
                 </div>
-                <div class="col-2">
+                <div class="col-6 col-lg-2 col-xl-2">
                     <div class="photos">
                         <viewer :options="options" class="photos-card-first">
                             <div>
@@ -48,7 +48,7 @@
                         </viewer>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-6 col-lg-2 col-xl-2">
                     <div class="photos">
                         <viewer :options="options" class="photos-card-third">
                             <img src="../../assets/images/complexPhotos/image_5.png" width="100%"/>
@@ -75,7 +75,7 @@
                         </viewer>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3 col-xl-3">
                     <ul>
                         <li>
                             * так выглядит полный комплект фотографий.
@@ -103,10 +103,11 @@
                         </p>
                         <p class="modal-price text-red">2296 ₽</p>
                         <p class="modal-old-price">2300 ₽</p>
-                        <Button value="заказать  бумажный" bgcolor="bg-red" />
+                        <Button value="заказать  бумажный" class="d-flex"  bgcolor="bg-red" />
                     </div>
-                    <div class="col-2">
-
+                    <div class="col-2 vertical-line">
+                        <div class="line">
+                        </div>
                     </div>
                     <div class="col-5">
                         <p class="modal-head text-blue">электронный</p>
@@ -118,7 +119,10 @@
                         </p>
                         <p class="modal-price text-blue">1996 ₽</p>
                         <p class="modal-old-price">2300 ₽</p>
-                        <Button value="заказать  электронный" bgcolor="bg-blue" />
+                        <Button value="заказать  электронный" class="d-flex" bgcolor="bg-blue" />
+                    </div>
+                    <div class="col-12">
+                        <Timer deadline="05/01/2021"/>
                     </div>
                 </div>
             </modal>
@@ -131,6 +135,7 @@
     import Vue from 'vue'
     import Button from "../button/Button";
     import Modal from "./Modal";
+    import Timer from "./Timer";
 
     Vue.use(Viewer);
 
@@ -156,7 +161,7 @@
                 this.$refs.carousel.slideNext();
             }
         },
-        components: {Button,    Modal}
+        components: {Timer, Button,    Modal}
     }
 </script>
 

@@ -7,7 +7,7 @@
                         О компании
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4 col-xl-4">
                     <div class="about-company-card">
                         <p class="company-card-title">
                             Кто мы ?
@@ -19,7 +19,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4 col-xl-4">
                     <div class="about-company-card">
                         <p class="company-card-title">
                             Как это работает ?
@@ -37,7 +37,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4 col-xl-4">
                     <div class="about-company-card">
                         <p class="company-card-title">
                             Зачем?
@@ -53,7 +53,7 @@
             </div>
             <div class="icon-cards">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-xl-3">
                         <div class="icon-card">
                             <img src="../../assets/images/icons/card-icon-1.svg"/>
                             <p>
@@ -62,7 +62,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-xl-3">
                         <div class="icon-card">
                             <img src="../../assets/images/icons/card-icon-2.svg"/>
                             <p>
@@ -72,7 +72,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-xl-3">
                         <div class="icon-card">
                             <img src="../../assets/images/icons/card-icon-3.svg"/>
                             <p>
@@ -81,7 +81,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-xl-3">
                         <div class="icon-card">
                             <img src="../../assets/images/icons/card-icon-4.svg"/>
                             <p>

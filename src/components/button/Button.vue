@@ -1,5 +1,5 @@
 <template>
-    <div style="display: inline-block">
+    <div class="inline-block">
         <a :class="bgcolor" class="my-btn" @click="showModal">
             {{value}}
         </a>
@@ -9,9 +9,9 @@
 <script>
     export default {
         name: "button",
-        data(){
-            return{
-                toggleModal:false
+        data() {
+            return {
+                toggleModal: false
             }
         },
         props: {
@@ -22,8 +22,8 @@
                 type: String
             }
         },
-        methods:{
-            showModal(){
+        methods: {
+            showModal() {
                 this.$emit('toggleModal', {
                     toggleModal: true
                 })
@@ -33,5 +33,7 @@
 </script>
 
 <style scoped>
-
+    .inline-block {
+        display: inline-block
+    }
 </style>

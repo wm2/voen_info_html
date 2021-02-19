@@ -3,7 +3,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-xl-3">
                         <ul class="left-links">
                             <li>
                                 <a href="">
@@ -21,7 +21,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 col-xl-4">
                         <ul class="left-links">
                             <li>
                                 <a href="">Политика возврата</a>
@@ -31,7 +31,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-6 col-lg-2 col-xl-2">
                         <ul class="right-links-about">
                             <li>
                                 <a href="">О компании</a>
@@ -44,7 +44,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3 col-xl-3">
                         <ul class="right-links">
                             <li>Связаться с нами</li>
                             <li><a href="tel:+7 (928) 774-49-03" ><img src="../../assets/images/icons/icon-phone.png" alt="phone icon">+7 (928) 774-49-03</a></li>

@@ -1,21 +1,26 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import GetMaterialsByCode from '../components/sections/GetMaterialsByCode.vue'
+import BasePage from '../components/common/BasePage.vue'
 
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  }
+    {
+        path: '/',
+        name: 'BasePage',
+        component: BasePage,
+        children: [
+            {path: '', name: 'home', component: () => import('../views/Home')},
+            {path: '/by-code', name: 'GetMaterialsByCode',component: () => import('../components/sections/GetMaterialsByCode.vue')},
+        ]
+    }
 ];
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes
 });
 
 

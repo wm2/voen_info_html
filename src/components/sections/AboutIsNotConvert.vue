@@ -7,12 +7,12 @@
                         Это Не наш конверт!
                     </p>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-lg-5 col-xl-5">
                     <viewer :options="options">
                         <img src="../../assets/images/not-convert-img.png" height="400" width="100%"/>
                     </viewer>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-lg-5 col-xl-5">
                     <div class="about-convert-body">
                         <ul>
                             <li>

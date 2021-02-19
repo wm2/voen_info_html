@@ -81,10 +81,11 @@
                     </p>
                     <p class="modal-price text-red">2296 ₽</p>
                     <p class="modal-old-price">2300 ₽</p>
-                    <Button value="заказать диск" bgcolor="bg-red"/>
+                    <Button value="заказать диск" class="d-flex" bgcolor="bg-red"/>
                 </div>
-                <div class="col-2">
-
+                <div class="col-2 vertical-line">
+                    <div class="line">
+                    </div>
                 </div>
                 <div class="col-5">
                     <p class="modal-head text-blue">носитель на cd</p>
@@ -96,7 +97,10 @@
                     </p>
                     <p class="modal-price text-blue">1996 ₽</p>
                     <p class="modal-old-price">2300 ₽</p>
-                    <Button value="заказать  электронный" bgcolor="bg-blue"/>
+                    <Button value="заказать  электронный" class="d-flex" bgcolor="bg-blue"/>
+                </div>
+                <div class="col-12">
+                    <Timer deadline="05/01/2021"/>
                 </div>
             </div>
         </modal>
@@ -108,6 +112,7 @@
     import 'hooper/dist/hooper.css';
     import Button from "../button/Button";
     import Modal from "./Modal";
+    import Timer from "./Timer";
 
     export default {
         name: "PhotosCarousel",
@@ -145,6 +150,7 @@
             }
         },
         components: {
+            Timer,
             Modal,
             Button,
             Hooper,
@@ -229,7 +235,7 @@
         font-weight: 900;
         font-size: 18px;
         color: #BCBCBC;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         text-decoration: line-through;
     }
 </style>

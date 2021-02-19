@@ -7,7 +7,7 @@
                         Важно!
                     </p>
                 </div>
-                <div class="col-5 ">
+                <div class="col-12 col-lg-5 col-xl-5">
                     <div class="about-convert-body">
                         <p class="body-text">
                             Вам обязательно придет еще бандероль от компании “ПроСолдат”. В ней будут фото сделанные в
@@ -51,7 +51,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6 col-xl-6">
                     <viewer :options="options">
                         <img src="../../assets/images/convert-img.png" height="533" width="100%"/>
                     </viewer>

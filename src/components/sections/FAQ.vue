@@ -5,24 +5,6 @@
                 <div class="col-12">
                     <p class="my-head-text">Вопрос-ответ</p>
                 </div>
-                <!--                <div class="col-8">-->
-                <!--                    <ul class="list-faq">-->
-                <!--                        <li v-for="index in list" :key="index.id">-->
-                <!--                            <div class="faq-title"-->
-                <!--                                 @click="contentVisible === index.id ? contentVisible = false : contentVisible = index.id">-->
-                <!--                                <div class="row">-->
-                <!--                                    <div class="col-12">-->
-                <!--                                        {{index.title }}-->
-                <!--                                    </div>-->
-                <!--                                </div>-->
-                <!--                            </div>-->
-
-                <!--                            <transition name="fade">-->
-                <!--                                <p class="faq-body" v-if='contentVisible === index.id'>{{ index.text }}</p>-->
-                <!--                            </transition>-->
-                <!--                        </li>-->
-                <!--                    </ul>-->
-                <!--                </div>-->
                 <div class="col-8">
                     <div class="list-faq">
                         <div class="accordion">

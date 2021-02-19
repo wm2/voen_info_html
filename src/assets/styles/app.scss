@@ -16,6 +16,12 @@ body {
   margin: 0;
 }
 
+.home {
+  background-image: url("../images/bg-figure.svg");
+  background-position-y: calc(100vh - 890px);
+  background-repeat: no-repeat;
+  z-index: -999;
+}
 
 a {
   text-decoration: none;
@@ -117,7 +123,7 @@ img.img {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .nav-items {
@@ -277,6 +283,41 @@ img.img {
   }
 }
 
+.player-container {
+  background-color: transparent !important;
+
+  .vcp-layer {
+    .btn-control {
+      svg {
+        g {
+          rect {
+            fill: $blue-color;
+          }
+        }
+
+        path {
+          fill: $blue-color;
+        }
+      }
+    }
+  }
+
+  .vcp-progress {
+    .vcp-progress-played {
+      background-color: $blue-color;
+    }
+  }
+
+  .volume-control .btn-control-panel .progress .volume-current {
+    background-color: $blue-color;
+  }
+
+  .settings-control {
+    .vcp-switch.open:after, .vcp-switch:after {
+      background-color: $blue-color;
+    }
+  }
+}
 
 // style of section complex-photos
 .complex-photos {
@@ -671,9 +712,10 @@ img.img {
   margin-bottom: 90px;
 
   .list-faq {
-    dl{
+    dl {
       margin-bottom: 0;
     }
+
     .accordion {
       dl:first-child {
         dt {
@@ -707,6 +749,7 @@ img.img {
 
     .faq-title {
       border-bottom: 2px solid #0650BF;
+
       a {
         font-size: 20px;
         line-height: 129%;
@@ -791,7 +834,7 @@ img.img {
 }
 
 .modal-body {
-  padding: 0 130px 40px 130px;
+  padding: 0 130px 20px 130px;
 }
 
 .modal-footer {
@@ -815,6 +858,18 @@ img.img {
   }
 }
 
+.vertical-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .line {
+    border: 1px solid #BECADC;
+    transform: rotate(180deg);
+    height: 264px;
+  }
+}
+
 /*
    * The following styles are auto-applied to elements with
    * transition="modal" when their visibility is toggled
@@ -829,4 +884,45 @@ img.img {
 
 .modal-enter, .modal-leave-to {
   opacity: 0;
+}
+
+
+.get-materials-by-code {
+  .instruc-by-code, .actions-by-code {
+    font-size: 16px;
+    line-height: 143.19%;
+    letter-spacing: 0.02em;
+    color: #4A4A4A;
+  }
+
+  .actions-by-code {
+    P {
+      margin-bottom: 10px;
+    }
+
+    input {
+      outline: none;
+      border: 1px solid #979B9D;
+      padding: 12px 8px;
+      width: 100%;
+    }
+
+    .inline-block {
+      margin-top: 60px;
+    }
+
+    a {
+      margin-top: 40px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 576px){
+  .my-head-text{
+    font-size: 30px;
+    .slider-buttons{
+      display: none;
+    }
+  }
 }
