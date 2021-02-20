@@ -5,7 +5,7 @@
                 <div class="col-12">
                     <p class="my-head-text">комплект ваших фотографий </p>
                 </div>
-                <div class="col-12 col-lg-7 col-xl-7">
+                <div class="col-12 col-lg-5 col-xl-5">
                     <div class="complex-photos-texts">
                         <p>
                             Мы планируем отправить наложенным платежом этот комплект на ваш домашний адрес, который
@@ -23,13 +23,13 @@
                             вариант.
                             Если вам ничего не нужно, пожалуйста нажмите на кнопку внизу.
                         </p>
-                        <Button bgcolor="bg-red" @toggleModal='showModalFunc' class="mr-30 d-flex" value="скачать"/>
-                        <Button bgcolor="bg-blue" value="отказаться" class="d-flex"/>
+                        <Button bgcolor="bg-red" @toggleModal='showModalFunc' class="mr-30" value="скачать"/>
+                        <Button bgcolor="bg-blue" value="отказаться"/>
                     </div>
 
 
                 </div>
-                <div class="col-6 col-lg-2 col-xl-2">
+                <div class="col-12 col-lg-2 col-xl-2">
                     <div class="photos">
                         <viewer :options="options" class="photos-card-first">
                             <div>
@@ -48,7 +48,7 @@
                         </viewer>
                     </div>
                 </div>
-                <div class="col-6 col-lg-2 col-xl-2">
+                <div class="col-12 col-lg-2 col-xl-2">
                     <div class="photos">
                         <viewer :options="options" class="photos-card-third">
                             <img src="../../assets/images/complexPhotos/image_5.png" width="100%"/>

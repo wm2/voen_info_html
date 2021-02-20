@@ -129,7 +129,23 @@
                     // shortDrag:false
                     itemsToSlide: 1,
                     carouselData: 0,
-                    hoverPause: false
+                    hoverPause: false,
+                    breakpoints: {
+                        0: {
+                            centerMode: false,
+                            itemsToShow: 1
+                        },576: {
+                            centerMode: false,
+                            itemsToShow: 2
+                        }, 800: {
+                            centerMode: false,
+                            itemsToShow: 3
+                        },
+                        1000: {
+                            itemsToShow: 4,
+                            pagination: 'fraction'
+                        }
+                    }
                 },
                 options: {
                     "navbar": false,

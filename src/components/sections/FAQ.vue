@@ -5,7 +5,7 @@
                 <div class="col-12">
                     <p class="my-head-text">Вопрос-ответ</p>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-lg-8 col-xl-8">
                     <div class="list-faq">
                         <div class="accordion">
                             <dl v-for="(item, index) in list">
@@ -13,7 +13,7 @@
                                     <a @click="currentQ = index"
                                        :class="{active : currentQ === index}">{{item.title}}
                                         <div :class="{dislayNone : currentQ === index}" class="text-blue">+</div>
-                                        <div :class="{dislayBlock : currentQ === index}" class="text-blue dislayNone">-</div>
+                                        <div :class="{dislayBlock : currentQ === index}" class="text-blue dislayNone">-x</div>
                                     </a>
                                 </dt>
                                 <dd class="faq-body" :class="{activeTwo : currentQ === index}">{{item.text}}</dd>

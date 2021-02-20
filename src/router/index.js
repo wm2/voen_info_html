@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import GetMaterialsByCode from '../components/sections/GetMaterialsByCode.vue'
 import BasePage from '../components/common/BasePage.vue'
 
 Vue.use(VueRouter);
