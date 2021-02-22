@@ -26,55 +26,55 @@
                         <Button bgcolor="bg-red" @toggleModal='showModalFunc' class="mr-30" value="скачать"/>
                         <Button bgcolor="bg-blue" value="отказаться"/>
                     </div>
-
-
                 </div>
                 <div class="col-12 col-lg-2 col-xl-2">
-                    <div class="photos">
-                        <viewer :options="options" class="photos-card-first">
-                            <div>
-                                <img src="../../assets/images/complexPhotos/image_12_1.png"/>
-                                <img src="../../assets/images/complexPhotos/image_17_1.png"/>
-                            </div>
-                            <div>
-                                <img src="../../assets/images/complexPhotos/image_10_1.png"/>
-                                <img src="../../assets/images/complexPhotos/image_17_1.png"/>
-                            </div>
-                        </viewer>
-                    </div>
-                    <div class="photos">
-                        <viewer :options="options" class="photos-card-second">
-                            <img src="../../assets/images/complexPhotos/image_6.png"/>
-                        </viewer>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-2 col-xl-2">
-                    <div class="photos">
-                        <viewer :options="options" class="photos-card-third">
-                            <img src="../../assets/images/complexPhotos/image_5.png" width="100%"/>
-                            <div>
+                    <hooper ref="carousel" :settings="hooperSettings" :infiniteScroll="true"
+                            style="outline: none !important;">
+                        <slide class="photos">
+                            <viewer :options="options" class="photos-card-first">
                                 <div>
-                                    <img src="../../assets/images/complexPhotos/image_17.png"/>
-                                    <img src="../../assets/images/complexPhotos/image_5.png"/>
+                                    <img src="../../assets/images/complexPhotos/image_12_1.png"/>
+                                    <img src="../../assets/images/complexPhotos/image_17_1.png"/>
+                                </div>
+                                <div>
+                                    <img src="../../assets/images/complexPhotos/image_10_1.png"/>
+                                    <img src="../../assets/images/complexPhotos/image_17_1.png"/>
+                                </div>
+                            </viewer>
+                        </slide>
+                        <slide class="photos">
+                            <viewer :options="options" class="photos-card-second">
+                                <img src="../../assets/images/complexPhotos/image_6.png"/>
+                            </viewer>
+                        </slide>
+                        <slide class="photos">
+                            <viewer :options="options" class="photos-card-third">
+                                <img src="../../assets/images/complexPhotos/image_5.png" width="100%"/>
+                                <div>
+                                    <div>
+                                        <img src="../../assets/images/complexPhotos/image_17.png"/>
+                                        <img src="../../assets/images/complexPhotos/image_5.png"/>
 
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/complexPhotos/image_17.png"/>
+                                        <img src="../../assets/images/complexPhotos/image_10.png"/>
+                                    </div>
                                 </div>
+                            </viewer>
+                        </slide>
+                        <slide class="photos">
+                            <viewer :options="options" class="photos-card-fourth">
                                 <div>
-                                    <img src="../../assets/images/complexPhotos/image_17.png"/>
-                                    <img src="../../assets/images/complexPhotos/image_10.png"/>
+                                    <img src="../../assets/images/complexPhotos/image_12_1.png"/>
+                                    <img src="../../assets/images/complexPhotos/image_10_1.png"/>
                                 </div>
-                            </div>
-                        </viewer>
-                    </div>
-                    <div class="photos">
-                        <viewer :options="options" class="photos-card-fourth">
-                            <div>
-                                <img src="../../assets/images/complexPhotos/image_12_1.png"/>
-                                <img src="../../assets/images/complexPhotos/image_10_1.png"/>
-                            </div>
-                            <img src="../../assets/images/complexPhotos/image_5.png" width="100%"/>
-                        </viewer>
-                    </div>
+                                <img src="../../assets/images/complexPhotos/image_5.png" width="100%"/>
+                            </viewer>
+                        </slide>
+                    </hooper>
                 </div>
+
                 <div class="col-12 col-lg-3 col-xl-3">
                     <ul>
                         <li>
@@ -135,17 +135,46 @@
     import Button from "../button/Button";
     import Modal from "./Modal";
     import Timer from "./Timer";
+    import {Hooper, Slide} from 'hooper';
+    import 'hooper/dist/hooper.css';
 
     Vue.use(Viewer);
 
     export default {
-        name: "ComplectPhotos",
+        name: "ComplectPhotosMobile",
         data() {
             return {
                 options: {
                     "navbar": false,
                     "title": false
                 },
+                hooperSettings: {
+                    itemsToShow: 4,
+                    centerMode: false,
+                    mouseDrag: true,
+                    autoPlay: true,
+                    touchDrag: true,
+                    wheelControl: false,
+                    // keysControl:false,
+                    // shortDrag:false
+                    itemsToSlide: 1,
+                    carouselData: 0,
+                    hoverPause: false,
+                    breakpoints: {
+                        0: {
+                            centerMode: false,
+                            itemsToShow: 1
+                        }, 576: {
+                            centerMode: false,
+                            itemsToShow: 2
+                        },
+                        1000: {
+                            itemsToShow: 4,
+                            pagination: 'fraction'
+                        }
+                    }
+                },
+
                 showModal: false
             }
         },
@@ -160,7 +189,10 @@
                 this.$refs.carousel.slideNext();
             }
         },
-        components: {Timer, Button, Modal}
+        components: {
+            Timer, Button, Modal, Hooper,
+            Slide
+        }
     }
 </script>
 

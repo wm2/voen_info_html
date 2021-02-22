@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-12 col-lg-6 col-xl-6">
                     <viewer :options="options">
-                        <img src="../../assets/images/convert-img.png" height="533" width="100%"/>
+                        <img src="../../assets/images/convert-img.png" width="100%"/>
                     </viewer>
                 </div>
             </div>

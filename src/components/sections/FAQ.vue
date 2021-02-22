@@ -13,7 +13,7 @@
                                     <a @click="currentQ = index"
                                        :class="{active : currentQ === index}">{{item.title}}
                                         <div :class="{dislayNone : currentQ === index}" class="text-blue">+</div>
-                                        <div :class="{dislayBlock : currentQ === index}" class="text-blue dislayNone">-x</div>
+                                        <div :class="{dislayBlock : currentQ === index}" class="text-blue dislayNone">-</div>
                                     </a>
                                 </dt>
                                 <dd class="faq-body" :class="{activeTwo : currentQ === index}">{{item.text}}</dd>

@@ -137,9 +137,6 @@
                         },576: {
                             centerMode: false,
                             itemsToShow: 2
-                        }, 800: {
-                            centerMode: false,
-                            itemsToShow: 3
                         },
                         1000: {
                             itemsToShow: 4,
