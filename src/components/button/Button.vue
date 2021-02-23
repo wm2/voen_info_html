@@ -1,5 +1,5 @@
 <template>
-    <div class="inline-block">
+    <div class="inline-flex">
         <a :class="bgcolor" class="my-btn" @click="showModal">
             {{value}}
         </a>
@@ -33,7 +33,7 @@
 </script>
 
 <style scoped>
-    .inline-block {
-        display: inline-block
+    .inline-flex{
+        display: inline-flex;
     }
 </style>

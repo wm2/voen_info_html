@@ -25,16 +25,16 @@
                             После оплаты Вам будет доступно полное видео
                         </p>
                         <viewer :options="options">
-                            <img src="../../assets/images/Голиков АА 1.png" height="332" width="100%"
+                            <img src="../../assets/images/Голиков АА 1.png" width="100%"
                                  style="margin-bottom: 70px"/>
                         </viewer>
 
                     </div>
                     <div class="row">
-                        <div class="col-6">
-                            <Button bgcolor="bg-red" value="скачать видео"/>
+                        <div class="col-sm-12 col-lg-6 col-xl-6">
+                            <Button bgcolor="bg-red" value="купить видео"/>
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-12 col-lg-6 col-xl-6">
                             <Button bgcolor="bg-blue" value="отказаться"/>
                         </div>
 

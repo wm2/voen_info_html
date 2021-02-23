@@ -47,6 +47,7 @@
         background: rgba(108, 118, 133, 0.33);
         display: table;
         transition: opacity 0.3s ease;
+        overflow: hidden;
     }
 
     .modal-wrapper {
@@ -65,6 +66,8 @@
 
     .modal-body {
         padding: 0;
+        max-height: 70vh;
+        overflow-y: scroll;
     }
 
     .modal-default-button {
