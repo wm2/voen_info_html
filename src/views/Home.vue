@@ -54,7 +54,10 @@
         data() {
             return {
                 some_variable: false,
-                isMobileVersion: false
+                isMobileVersion: false,
+                window: {
+                    width: 0,
+                }
             }
         },
         components: {
@@ -73,15 +76,27 @@
             navbar,
 
         },
+        methods: {
+            handleResize() {
+                this.window.width = window.innerWidth;
+                if (this.window.width < 571) {
+                    this.isMobileVersion =true;
+                }else {
+                    this.isMobileVersion =false;
+                }
+            }
+        },
         mounted() {
             setTimeout(function () {
                 this.some_variable = true;
             }.bind(this), 30000);
-            if (screen.width <= 576) {
-                this.isMobileVersion = true;
-            } else {
-                this.isMobileVersion = false;
-            }
+        },
+        created() {
+            window.addEventListener('resize', this.handleResize);
+            this.handleResize();
+        },
+        destroyed() {
+            window.removeEventListener('resize', this.handleResize);
         },
     }
 </script>

@@ -18,10 +18,23 @@
                     <div class="col-9">
                         <div class="nav-items">
                             <ul>
-                                <li v-for="item in navItems">
-                                    <a href="#">
-                                        {{item}}
+                                <li>
+                                    <a href="#about-company">
+                                        о компании
                                     </a>
+                                </li>
+                                <li>
+                                    <a href="#faq">
+                                        вопрос-ответ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact">
+                                        контакты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#news">военные новости</a>
                                 </li>
                             </ul>
                         </div>
@@ -35,12 +48,5 @@
 <script>
     export default {
         name: "navbar",
-        data() {
-            return {
-                navItems: ["о компании", "вопрос-ответ", "контакты", "военные новости"],
-                btn_value: "MyBtn",
-            }
-
-        }
     }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="about-company" >
+    <div class="about-company" id="about-company" ref="about-company">
         <div class="container ">
             <div class="row">
                 <div class="col-12">

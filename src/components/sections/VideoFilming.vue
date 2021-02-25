@@ -31,10 +31,8 @@
 
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-lg-6 col-xl-6">
-                            <Button bgcolor="bg-red" value="купить видео"/>
-                        </div>
-                        <div class="col-sm-12 col-lg-6 col-xl-6">
+                        <div class="col-12">
+                            <Button bgcolor="bg-red" class="mr-30" value="купить видео"/>
                             <Button bgcolor="bg-blue" value="отказаться"/>
                         </div>
 

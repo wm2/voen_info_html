@@ -11,6 +11,10 @@ $red-color: #B93A3E;
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -705,6 +709,19 @@ img.img {
       margin-bottom: 0;
     }
   }
+
+  .all-rights {
+    display: none;
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      color: #CBC9C9;
+      margin-bottom: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
 }
 
 // section style FAQ
@@ -980,40 +997,134 @@ img.img {
       }
     }
   }
-  .footer{
+  .footer {
     padding: 40px 0 25px 0;
-    .left-links a{
+
+    .left-links a {
       font-size: 14px;
       line-height: 16px;
     }
-    .left-links:first-child{
+
+    .left-links:first-child {
       margin-bottom: 10px;
     }
-    .right-links-about{
+
+    .right-links-about {
       font-weight: 500;
       font-size: 14px;
-      a{
+
+      a {
         font-weight: 500;
         font-size: 14px;
-        img{
+
+        img {
           width: 18px;
         }
       }
     }
-    .right-links li:first-child{
+
+    .right-links li:first-child {
       font-weight: 500;
       font-size: 14px;
     }
-    .right-links{
+
+    .right-links {
       font-weight: 300;
       font-size: 14px;
-      a{
-        font-weight:300;
+
+      a {
+        font-weight: 300;
         font-size: 14px;
-        img{
+
+        img {
           width: 18px;
         }
       }
     }
+
+    .all-rights {
+      display: block !important;
+    }
+  }
+  .scroll-to-top {
+    img {
+      width: 36px;
+      height: 36px;
+    }
+
+    right: 8px !important;
+    top: -20px !important;
+  }
+
+}
+
+@media screen and (max-width: 1527px) {
+  .header-text {
+    position: relative;
+
+    div {
+      position: absolute;
+      z-index: 999999999;
+      text-align: right;
+      width: 100%;
+
+      .my-head-text {
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1373px) {
+  .header {
+    img.img {
+      width: 100%;
+      height: auto;
+      max-height: 100vh;
+      max-width: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+    }
+  }
+  .nav-items {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .header-text{
+    .my-head-text{
+      font-size: 25px;
+    }
+  }
+  .header {
+    overflow: hidden;
+    height: 50vh !important;
+  }
+  .header img.img {
+    right: -130px;
+  }
+  .logo {
+    ul {
+      li {
+        a {
+          img{
+            height: 45px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  .header-text div{
+    top: -25px;
+  }
+}
+@media screen and (max-width: 422px){
+  .header{
+    height: 45vh !important;
   }
 }
