@@ -50,7 +50,6 @@
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
 
-                    <v-select :options="options111"></v-select>
 
                     <p class="content-text">(Отправка бандероли
                         с наложенным платежом Почтой России.
@@ -88,7 +87,6 @@
     import Button from "../button/Button";
     import img from '../../assets/images/img-video.png'
     import Modal from "./Modal";
-    Vue.component('v-select', VueSelect.VueSelect);
 
     export default {
         name: "VideoFilming",
@@ -102,11 +100,7 @@
                     "title": false
                 },
                 showModal: false,
-                options111: [
-                    'foo',
-                    'bar',
-                    'baz'
-                ]
+
             }
         },
         methods: {

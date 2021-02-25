@@ -5,7 +5,6 @@ import store from './store'
 import "./assets/styles/app.scss";
 import VueCoreVideoPlayer from 'vue-core-video-player'
 
-
 const kr = {
     "dashboard": {
         "btn": {
