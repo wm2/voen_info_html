@@ -20,42 +20,42 @@
                             style="outline: none !important;">
                         <slide class="slide-box">
                             <div>
-                                <!--                            <viewer :options="options">-->
+                                <viewer :options="options">
+                                    <div class="slide-img">
+                                        <div class="img-bg">
+
+                                            <img src="../../assets/images/FA9A2035.png" height="384" width="261"/></div>
+                                    </div>
+                                </viewer>
+                            </div>
+                        </slide>
+                        <slide class="slide-box">
+                            <viewer :options="options">
                                 <div class="slide-img">
                                     <div class="img-bg">
 
-                                    </div>
+                                        <img src="../../assets/images/FA9A2035.png" height="384" width="261"/></div>
                                 </div>
-                                <!--                            </viewer>-->
-                            </div>
+
+                            </viewer>
                         </slide>
                         <slide class="slide-box">
-                            <!--                            <viewer :options="options">-->
-                            <div class="slide-img">
-                                <div class="img-bg">
+                            <viewer :options="options">
+                                <div class="slide-img">
+                                    <div class="img-bg">
 
+                                        <img src="../../assets/images/FA9A2035.png" height="384" width="261"/></div>
                                 </div>
-                            </div>
-
-                            <!--                            </viewer>-->
+                            </viewer>
                         </slide>
                         <slide class="slide-box">
-                            <!--                            <viewer :options="options">-->
-                            <div class="slide-img">
-                                <div class="img-bg">
+                            <viewer :options="options">
+                                <div class="slide-img">
+                                    <div class="img-bg">
 
+                                        <img src="../../assets/images/FA9A2035.png" height="384" width="261"/></div>
                                 </div>
-                            </div>
-                            <!--                            </viewer>-->
-                        </slide>
-                        <slide class="slide-box">
-                            <!--                            <viewer :options="options">-->
-                            <div class="slide-img">
-                                <div class="img-bg">
-
-                                </div>
-                            </div>
-                            <!--                            </viewer>-->
+                            </viewer>
                         </slide>
                     </hooper>
 
@@ -102,17 +102,20 @@
                 <div class="col-12">
                     <Timer deadline="05/01/2021"/>
                 </div>
+
             </div>
         </modal>
     </div>
 </template>
 
 <script>
+
     import {Hooper, Slide} from 'hooper';
     import 'hooper/dist/hooper.css';
     import Button from "../button/Button";
     import Modal from "./Modal";
     import Timer from "./Timer";
+
 
     export default {
         name: "PhotosCarousel",
@@ -134,7 +137,7 @@
                         0: {
                             centerMode: false,
                             itemsToShow: 1
-                        },576: {
+                        }, 576: {
                             centerMode: false,
                             itemsToShow: 2
                         },
@@ -167,7 +170,8 @@
             Modal,
             Button,
             Hooper,
-            Slide
+            Slide,
+
         }
     }
 </script>
@@ -199,7 +203,12 @@
             width: 100%;
             height: 384px;
             padding: 10px;
+            text-align: center;
+            img{
+                opacity: 0;
+            }
         }
+
     }
 
     .hooper {
