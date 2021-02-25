@@ -80,10 +80,5 @@
 </script>
 
 <style scoped>
-.scroll-to-top{
-    position: absolute;
-    right: 0;
-    top: -80px;
-    cursor: pointer;
-}
+
 </style>

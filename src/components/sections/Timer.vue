@@ -63,21 +63,5 @@
 </script>
 
 <style scoped>
-    .timer{
-        text-align: center;
-    }
-    .timer-head {
-        font-size: 20px;
-        line-height: 36px;
-        color: #9FAABA;
-        margin: 30px 0;
-    }
-    .text-3xl{
-        font-weight: 600;
-        margin-bottom: 0;
-        font-size: 32px;
-        line-height: 25px;
-        color: #9FAABA;
 
-    }
 </style>

@@ -66,7 +66,5 @@
 </script>
 
 <style scoped>
-    .get-materials-by-code {
-        padding-bottom: 500px;
-    }
+
 </style>

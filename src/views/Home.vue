@@ -9,24 +9,6 @@
         <about-company/>
         <f-a-q/>
         <news/>
-        <!--        <Timer ref="countDown"-->
-        <!--               :initial-value="360550"-->
-        <!--               :stroke-width="5"-->
-        <!--               :hourLabel="'часов'"-->
-        <!--               :minuteLabel="'минут'"-->
-        <!--               :secondLabel="'секунд'"-->
-        <!--               :size="130"-->
-        <!--               :padding="14"-->
-        <!--               :hour-label="'hours'"-->
-        <!--               :minute-label="'minutes'"-->
-        <!--               :second-label="'seconds'"-->
-        <!--               :show-second="true"-->
-        <!--               :show-minute="true"-->
-        <!--               :show-hour="true"-->
-        <!--               :show-negatives="true"-->
-        <!--               :paused="some_variable"-->
-        <!--               :notify-every="'minute'"-->
-        <!--        ></Timer>-->
 
         <Footer/>
     </div>
@@ -46,7 +28,6 @@
     import AboutIsNotConvert from "@/components/sections/AboutIsNotConvert";
     import FAQ from "@/components/sections/FAQ";
     import News from "@/components/sections/News";
-    import Timer from "@/components/sections/Timer";
     import ComplectPhotosMobile from "../components/sections/ComplectPhotosMobile";
 
     export default {
@@ -62,7 +43,6 @@
         },
         components: {
             ComplectPhotosMobile,
-            Timer,
             News,
             FAQ,
             AboutIsNotConvert,

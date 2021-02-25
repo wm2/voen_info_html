@@ -32,7 +32,7 @@
                 </hooper>
             </div>
         </div>
-        <modal v-if="showModal" @close="closeModal" class="slide-box modal-news">
+        <modal v-if="showModal" @close="closeModal" class="modal-news">
             <span slot="header">{{news[clickCardId].title}}</span>
             <div slot="body">
                 <p>{{news[clickCardId].title}}</p>
@@ -152,12 +152,12 @@
             },
             showModalFunc(id) {
                 this.showModal = true;
-                document.body.className = 'hidden';
+                // document.body.className = 'hidden';
                 this.clickCardId = id
             },
             closeModal() {
                 this.showModal = false;
-                document.body.className = ''
+                // document.body.className = ''
 
             }
         }
@@ -165,51 +165,5 @@
 </script>
 
 <style lang="scss">
-    .news {
-        outline: none !important;
-        margin-bottom: 90px;
 
-        .my-head-text {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    .hidden {
-        overflow: hidden;
-    }
-
-    .modal-news {
-        .modal-container {
-            width: 70%;
-        }
-
-        .modal-header {
-            padding: 30px 130px 10px 130px;
-            text-align: left;
-            color: #344F82;
-        }
-
-        .modal-footer {
-            padding-bottom: 30px;
-            padding-top: 20px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 148%;
-            letter-spacing: 0.07em;
-            color: #3B3B3C;
-            margin-bottom: 10px;
-        }
-        .create-date{
-            font-size: 16px;
-            line-height: 130.19%;
-            letter-spacing: 0.07em;
-            color: #979B9D;
-        }
-        .modal-body {
-            padding: 0 130px 0 130px;
-        }
-    }
 </style>
