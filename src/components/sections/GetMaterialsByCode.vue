@@ -7,7 +7,7 @@
                         получение материалов по коду
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 co-lg-4 col-xl-4">
                     <div class="instruc-by-code">
                         <p>Ниже в поле ввода Вы можете ввести полученный код</p>
                         <p>
@@ -37,7 +37,7 @@
 
                 </div>
 
-                <div class="col-6">
+                <div class="col-sm-12 col-md-6 co-lg-6 col-xl-6">
                     <div class="player-container">
                         <vue-core-video-player :cover="cover" style="height: auto;width: 100%"
                                                src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></vue-core-video-player>
