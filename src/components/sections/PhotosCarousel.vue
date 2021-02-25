@@ -152,9 +152,6 @@
                     "title": false
                 },
                 showModal: false,
-                window: {
-                    width: 0,
-                },
             }
         },
         methods: {

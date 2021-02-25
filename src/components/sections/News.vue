@@ -33,13 +33,13 @@
             </div>
         </div>
         <modal v-if="showModal" @close="closeModal" class="modal-news">
-            <span slot="header">{{news[clickCardId].title}}</span>
+            <span slot="header">{{one_new.title}}</span>
             <div slot="body">
-                <p>{{news[clickCardId].title}}</p>
-                <p class="create-date">{{news[clickCardId].create_date}}</p>
-                <img :src='news[clickCardId].imgUrl===null?notFoundImg:news[clickCardId].imgUrl' alt="img"
+                <p>{{one_new.title}}</p>
+                <p class="create-date">{{one_new.create_date}}</p>
+                <img :src='one_new.imgUrl===null?notFoundImg:one_new.imgUrl' alt="img"
                      draggable="false" width="100%" style="max-width: 100%;margin-bottom: 10px">
-                <p class="news-text"> {{news[clickCardId].text}}</p>
+                <p class="news-text"> {{one_new.text}}</p>
             </div>
         </modal>
     </div>
@@ -65,8 +65,6 @@
                     autoPlay: true,
                     touchDrag: true,
                     wheelControl: false,
-                    // keysControl:false,
-                    // shortDrag:false
                     itemsToSlide: 1,
                     carouselData: 0,
                     hoverPause: false,
@@ -84,10 +82,11 @@
                         }
                     }
                 },
+                one_new:{},
                 notFoundImg: notFoundImg,
                 news: [
                     {
-                        id: 0,
+                        id: 1110,
                         create_date: "19.01.2021",
                         imgUrl: null,
                         title: "Минобороны и РВИО будут вместе популяризировать военные музеи ",
@@ -95,7 +94,7 @@
                             "вместе популяризировать военные музеи будут вместе популяризировать"
                     },
                     {
-                        id: 1,
+                        id: 1109,
                         create_date: "10.02.2021",
                         imgUrl: img,
                         title: "Минобороны и РВИО будут вместе популяризировать военные музеи ",
@@ -103,7 +102,7 @@
                             "вместе популяризировать военные музеи будут вместе популяризировать"
                     },
                     {
-                        id: 2,
+                        id: 1108,
                         create_date: "13.01.2021",
                         imgUrl: img,
                         title: "Минобороны и РВИО будут вместе популяризировать военные музеи  ",
@@ -120,7 +119,7 @@
                             "Российское оружие хорошо известно в регионе Ближнего Востока и Северной Африки и пользуется здесь высоким спросом. Поэтому для российского оружейного экспорта этот регион представляет особую важность: по итогам 2020 года именно на страны данного региона пришлось более 50% всех поставок оружия из России. Общий объём российских поставок оружия в зарубежные страны в 2020 году составил 13 млрд долларов."
                     },
                     {
-                        id: 3,
+                        id: 1107,
                         create_date: "12.02.2021",
                         imgUrl: img,
                         title: "Минобороны и РВИО будут вместе популяризировать военные музеи ",
@@ -129,7 +128,6 @@
                     },
                 ],
                 showModal: false,
-                clickCard: 0
             }
         },
         components: {
@@ -155,14 +153,19 @@
             },
             showModalFunc(id) {
                 this.showModal = true;
-                this.clickCardId = id;
+                this.showFunc(id);
                 if (window.innerWidth < 576) {
                     document.body.className = 'hidden';
                 }
             },
+            showFunc(id) {
+                if (id) {
+                    this.one_new = this.news.find(x => x.id ==id)
+                }
+            },
             closeModal() {
                 this.showModal = false;
-                document.body.className = ''
+                document.body.className = '';
             }
         }
     }
