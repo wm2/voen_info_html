@@ -31,45 +31,23 @@
                     <hooper ref="carousel" :settings="hooperSettings" :infiniteScroll="true"
                             style="outline: none !important;">
                         <slide class="photos">
-                            <viewer :options="options" class="photos-card-first">
-                                <div>
-                                    <img src="../../assets/images/complexPhotos/image_12_1.png"/>
-                                    <img src="../../assets/images/complexPhotos/image_17_1.png"/>
-                                </div>
-                                <div>
-                                    <img src="../../assets/images/complexPhotos/image_10_1.png"/>
-                                    <img src="../../assets/images/complexPhotos/image_17_1.png"/>
-                                </div>
+                            <viewer :options="options" class="photos-card">
+                                <img src="../../assets/images/complexPhotos/complect-1.png"/>
                             </viewer>
                         </slide>
                         <slide class="photos">
-                            <viewer :options="options" class="photos-card-second">
-                                <img src="../../assets/images/complexPhotos/image_6.png"/>
+                            <viewer :options="options" class="photos-card">
+                                <img src="../../assets/images/complexPhotos/complect-2.png"/>
                             </viewer>
                         </slide>
                         <slide class="photos">
-                            <viewer :options="options" class="photos-card-third">
-                                <img src="../../assets/images/complexPhotos/image_5.png" width="100%"/>
-                                <div>
-                                    <div>
-                                        <img src="../../assets/images/complexPhotos/image_17.png"/>
-                                        <img src="../../assets/images/complexPhotos/image_5.png"/>
-
-                                    </div>
-                                    <div>
-                                        <img src="../../assets/images/complexPhotos/image_17.png"/>
-                                        <img src="../../assets/images/complexPhotos/image_10.png"/>
-                                    </div>
-                                </div>
+                            <viewer :options="options" class="photos-card">
+                                <img src="../../assets/images/complexPhotos/complect-3.png"/>
                             </viewer>
                         </slide>
                         <slide class="photos">
-                            <viewer :options="options" class="photos-card-fourth">
-                                <div>
-                                    <img src="../../assets/images/complexPhotos/image_12_1.png"/>
-                                    <img src="../../assets/images/complexPhotos/image_10_1.png"/>
-                                </div>
-                                <img src="../../assets/images/complexPhotos/image_5.png" width="100%"/>
+                            <viewer :options="options" class="photos-card">
+                                <img src="../../assets/images/complexPhotos/complect-4.png"/>
                             </viewer>
                         </slide>
                     </hooper>
@@ -88,10 +66,10 @@
             </div>
         </div>
 
-        <modal v-if="showModal" @close="showModal = false">
+        <modal v-if="showModal" @close="closeModal">
             <span slot="header">Выберите нужный вариант</span>
             <div class="row" slot="body">
-                <div class="col-5">
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
                     <p class="modal-head text-red">Бумажный</p>
                     <p class="content-text">(Отправка бандероли
                         с наложенным платежом Почтой России.
@@ -104,11 +82,11 @@
                     <p class="modal-old-price">2300 ₽</p>
                     <Button value="заказать  бумажный" class="d-flex" bgcolor="bg-red"/>
                 </div>
-                <div class="col-2 vertical-line">
+                <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 vertical-line">
                     <div class="line">
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
                     <p class="modal-head text-blue">электронный</p>
                     <p class="content-text">
                         (После внесения
@@ -181,12 +159,18 @@
         methods: {
             showModalFunc(data) {
                 this.showModal = data.toggleModal;
+                document.body.className = 'hidden';
             },
             slidePrev() {
                 this.$refs.carousel.slidePrev();
             },
             slideNext() {
                 this.$refs.carousel.slideNext();
+            },
+            closeModal(){
+                this.showModal = false;
+                document.body.className = '';
+
             }
         },
         components: {

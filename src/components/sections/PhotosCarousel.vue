@@ -67,10 +67,10 @@
             </div>
         </div>
 
-        <modal v-if="showModal" @close="showModal = false">
+        <modal v-if="showModal" @close="closeModal">
             <span slot="header">Выберите нужный вариант</span>
             <div class="row" slot="body">
-                <div class="col-5">
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
                     <p class="modal-head text-red">носитель на cd</p>
                     <p class="content-text">(Отправка бандероли
                         с наложенным платежом Почтой России.
@@ -83,11 +83,11 @@
                     <p class="modal-old-price">2300 ₽</p>
                     <Button value="заказать диск" class="d-flex" bgcolor="bg-red"/>
                 </div>
-                <div class="col-2 vertical-line">
+                <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 vertical-line">
                     <div class="line">
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
                     <p class="modal-head text-blue">носитель на cd</p>
                     <p class="content-text">
                         (После внесения
@@ -151,19 +151,30 @@
                     "navbar": false,
                     "title": false
                 },
-                showModal: false
+                showModal: false,
+                window: {
+                    width: 0,
+                },
             }
         },
         methods: {
             showModalFunc(data) {
                 this.showModal = data.toggleModal;
+                if (window.innerWidth < 576) {
+                    document.body.className = 'hidden';
+                }
             },
+
             slidePrev() {
                 this.$refs.carousel.slidePrev();
             },
             slideNext() {
                 this.$refs.carousel.slideNext();
-            }
+            },
+            closeModal() {
+                this.showModal = false;
+                document.body.className = '';
+            },
         },
         components: {
             Timer,
