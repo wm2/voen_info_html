@@ -163,6 +163,9 @@ img.img {
     }
   }
 }
+.icon-mobile-ver{
+  display: none;
+}
 
 @keyframes in {
   0% {
@@ -1064,7 +1067,7 @@ img.img {
 
     div {
       position: absolute;
-      z-index: 999999999;
+      z-index: 1;
       text-align: right;
       width: 100%;
 
@@ -1088,9 +1091,7 @@ img.img {
       z-index: 0;
     }
   }
-  .nav-items {
-    display: none;
-  }
+
 
 }
 
@@ -1121,6 +1122,12 @@ img.img {
   }
   .header-text div{
     top: -25px;
+  }
+  .nav-items {
+    display: none;
+  }
+  .icon-mobile-ver{
+    display: block;
   }
 }
 @media screen and (max-width: 422px){
