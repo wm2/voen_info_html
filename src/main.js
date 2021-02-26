@@ -5,6 +5,14 @@ import store from './store'
 import "./assets/styles/app.scss";
 import VueCoreVideoPlayer from 'vue-core-video-player'
 import vuetify from './plugins/vuetify';
+import VueAxios from 'vue-axios'
+import './filtres/filters'
+import axios from 'axios'
+import Meta from 'vue-meta'
+
+Vue.use(Meta);
+Vue.config.productionTip = false;
+Vue.use(VueAxios, axios);
 
 const kr = {
     "dashboard": {

@@ -1,4 +1,4 @@
-<template>
+<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
   <v-main>
     <v-container fluid>
       <v-toolbar flat color="dark">
@@ -445,7 +445,7 @@ export default {
     },
   },
   created() {
-    console.log(this.$store.getters.isLoggedIn)
+    console.log(this.$store.getters.isLoggedIn);
     console.log(this.$store.getters.user.role)
   },
   mounted() {
@@ -456,7 +456,7 @@ export default {
       if (e.response.status === 401) {
         this.$store.dispatch("logout")
             .then(() => {
-              this.$router.push('/crm')
+              this.$router.push('/crm');
               this.dialog = false
             })
             .catch(err => console.log(err))
