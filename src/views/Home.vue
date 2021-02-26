@@ -9,7 +9,6 @@
         <about-company/>
         <f-a-q/>
         <news/>
-
         <Footer/>
     </div>
 </template>
@@ -17,18 +16,18 @@
 <script>
 
 
-    import navbar from '@/components/navbar/Navbar.vue'
-    import Header from "@/components/sections/Header";
-    import PhotosCarousel from "@/components/sections/PhotosCarousel";
-    import VideoFilming from "@/components/sections/VideoFilming";
-    import ComplectPhotos from "@/components/sections/ComplectPhotos";
-    import AboutConvert from "@/components/sections/AboutConvert";
-    import AboutCompany from "@/components/sections/AboutCompany";
-    import Footer from "@/components/sections/Footer";
-    import AboutIsNotConvert from "@/components/sections/AboutIsNotConvert";
-    import FAQ from "@/components/sections/FAQ";
-    import News from "@/components/sections/News";
-    import ComplectPhotosMobile from "../components/sections/ComplectPhotosMobile";
+    import navbar from '@/components/site/navbar/Navbar.vue'
+    import Header from "@/components/site/sections/Header";
+    import PhotosCarousel from "@/components/site/sections/PhotosCarousel";
+    import VideoFilming from "@/components/site/sections/VideoFilming";
+    import ComplectPhotos from "@/components/site/sections/ComplectPhotos";
+    import AboutConvert from "@/components/site/sections/AboutConvert";
+    import AboutCompany from "@/components/site/sections/AboutCompany";
+    import Footer from "@/components/site/sections/Footer";
+    import AboutIsNotConvert from "@/components/site/sections/AboutIsNotConvert";
+    import FAQ from "@/components/site/sections/FAQ";
+    import News from "@/components/site/sections/News";
+    import ComplectPhotosMobile from "@/components/site/sections/ComplectPhotosMobile";
 
     export default {
         name: 'Home',

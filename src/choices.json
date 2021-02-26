@@ -1,0 +1,116 @@
+{
+  "status_q": {
+    "New": "Новый"
+  },
+  "parents_q": {
+    "Yes": "Приедут",
+    "No": "Не приедут",
+    "Other": "Не знаю"
+  },
+  "report_type": {
+    "Photo": "Фото",
+    "Video": "Видео"
+  },
+  "reports_q": {
+    "Opened": "Открыт",
+    "Closed": "Закрыт"
+  },
+  "regions": [
+    {
+      "key": "Region",
+      "value": "Область"
+    },
+    {
+      "key": "Edge",
+      "value": "Край"
+    },
+    {
+      "key": "Republic",
+      "value": "Республика"
+    }
+  ],
+  "cities": [
+    {
+      "key": "Town",
+      "value": "Город"
+    },
+    {
+      "key": "Selo",
+      "value": "Село"
+    },
+    {
+      "key": "Poselok",
+      "value": "Поселок"
+    },
+    {
+      "key": "Farm",
+      "value": "Хутор"
+    },
+    {
+      "key": "Aul",
+      "value": "Аул"
+    },
+    {
+      "key": "Village",
+      "value": "Деревня"
+    },
+    {
+      "key": "Sloboda",
+      "value": "Слобода"
+    },
+    {
+      "key": "Stanitsa",
+      "value": "Станица"
+    },
+    {
+      "key": "WorkersSettlement",
+      "value": "Рабочий поселок"
+    },
+    {
+      "key": "Settlement",
+      "value": "Поселок городского типа"
+    },
+    {
+      "key": "GardenPartnership",
+      "value": "Садовое товарищество"
+    }
+  ],
+  "streets": [
+    {
+      "key": "Street",
+      "value": "Улица"
+    },
+    {
+      "key": "Travel",
+      "value": "Проезд"
+    },
+    {
+      "key": "Avenue",
+      "value": "Проспект"
+    },
+    {
+      "key": "Area",
+      "value": "Площадь"
+    },
+    {
+      "key": "Microdistrict",
+      "value": "Микрорайон"
+    },
+    {
+      "key": "Highway",
+      "value": "Шоссе"
+    },
+    {
+      "key": "Lane",
+      "value": "Переулок"
+    },
+    {
+      "key": "Boulevard",
+      "value": "Бульвар"
+    },
+    {
+      "key": "Quarter",
+      "value": "Квартал"
+    }
+  ]
+}

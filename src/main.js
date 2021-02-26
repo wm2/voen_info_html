@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import "./assets/styles/app.scss";
 import VueCoreVideoPlayer from 'vue-core-video-player'
+import vuetify from './plugins/vuetify';
 
 const kr = {
     "dashboard": {
@@ -38,7 +39,6 @@ const kr = {
     }
 };
 
-
 Vue.use(VueCoreVideoPlayer, {
     lang: kr
 });
@@ -48,5 +48,6 @@ Vue.config.productionTip = false;
 new Vue({
     router,
     store,
+    vuetify,
     render: h => h(App)
 }).$mount('#app');
