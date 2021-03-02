@@ -29,25 +29,21 @@
 
 
                 </div>
-                <div class="col-12 col-lg-2 col-xl-2">
-                    <div class="photos">
-                        <viewer :options="options" class="photos-card">
-                            <img src="../../../assets/images/complexPhotos/complect-1.png"/></viewer>
-                    </div>
-                    <div class="photos">
-                        <viewer :options="options" class="photos-card">
-                                <img src="../../../assets/images/complexPhotos/complect-3.png"/></viewer>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-2 col-xl-2">
-                    <div class="photos">
-                        <viewer :options="options" class="photos-card">
-                            <img src="../../../assets/images/complexPhotos/complect-2.png"/></viewer>
-                    </div>
-                    <div class="photos">
-                        <viewer :options="options" class="photos-card">
-                            <img src="../../../assets/images/complexPhotos/complect-4.png"/></viewer>
-                    </div>
+                <div class="col-12 col-lg-4 col-xl-4">
+                    <viewer :options="options" class="photos-cards">
+                            <div class="photos">
+                                <img src="../../../assets/images/complexPhotos/complect-1.png"/>
+                            </div>
+                            <div class="photos">
+                                <img src="../../../assets/images/complexPhotos/complect-3.png"/>
+                            </div>
+                            <div class="photos">
+                                <img src="../../../assets/images/complexPhotos/complect-2.png"/>
+                            </div>
+                            <div class="photos">
+                                <img src="../../../assets/images/complexPhotos/complect-4.png"/>
+                            </div>
+                    </viewer>
                 </div>
                 <div class="col-12 col-lg-3 col-xl-3">
                     <ul>

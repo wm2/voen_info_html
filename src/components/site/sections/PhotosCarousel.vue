@@ -15,49 +15,40 @@
                     </div>
                 </div>
                 <div class="col-12">
+                    <viewer :options="options">
 
-                    <hooper ref="carousel" :settings="hooperSettings" :infiniteScroll="true"
-                            style="outline: none !important;">
-                        <slide class="slide-box">
-                            <div>
-                                <viewer :options="options">
-                                    <div class="slide-img">
-                                        <div class="img-bg">
-
-                                            <img src="../../../assets/images/FA9A2035.png" height="384" width="261"/></div>
+                        <hooper ref="carousel" :settings="hooperSettings" :infiniteScroll="true"
+                                style="outline: none !important;">
+                            <slide class="slide-box">
+                                <div class="slide-img">
+                                    <div class="img-bg">
+                                        <img src="../../../assets/images/FA9A2035.png" height="384" width="261"/>
                                     </div>
-                                </viewer>
-                            </div>
-                        </slide>
-                        <slide class="slide-box">
-                            <viewer :options="options">
+                                </div>
+                            </slide>
+                            <slide class="slide-box">
                                 <div class="slide-img">
                                     <div class="img-bg">
-
                                         <img src="../../../assets/images/FA9A2035.png" height="384" width="261"/></div>
                                 </div>
 
-                            </viewer>
-                        </slide>
-                        <slide class="slide-box">
-                            <viewer :options="options">
+                            </slide>
+                            <slide class="slide-box">
                                 <div class="slide-img">
                                     <div class="img-bg">
-
-                                        <img src="../../../assets/images/FA9A2035.png" height="384" width="261"/></div>
+                                        <img src="../../../assets/images/FA9A2035.png" height="384" width="261"/>
+                                    </div>
                                 </div>
-                            </viewer>
-                        </slide>
-                        <slide class="slide-box">
-                            <viewer :options="options">
+                            </slide>
+                            <slide class="slide-box">
                                 <div class="slide-img">
                                     <div class="img-bg">
-
                                         <img src="../../../assets/images/FA9A2035.png" height="384" width="261"/></div>
                                 </div>
-                            </viewer>
-                        </slide>
-                    </hooper>
+                            </slide>
+                        </hooper>
+                    </viewer>
+
 
                 </div>
                 <div class="col-12">

@@ -107,8 +107,8 @@ const routes = [
         name: 'BasePage',
         component: BasePage,
         children: [
-            {path: '', name: 'home', component: () => import('../views/Home')},
-            {path: '/by-code', name: 'GetMaterialsByCode',component: () => import('../components/site/sections/GetMaterialsByCode.vue')},
+            {path: '/by-code', name: 'home', component: () => import('../views/Home')},
+            {path: '', name: 'GetMaterialsByCode',component: () => import('../components/site/sections/GetMaterialsByCode.vue')},
         ]
     }
 ];

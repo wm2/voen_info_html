@@ -360,17 +360,20 @@ img.img {
     }
   }
 
+  .photos-cards {
+    width: 100%;
+    display: inline-block;
 
-  .photos-card {
-    margin-bottom: 10px;
-
-    img {
-      width: 100%;
-      height: auto;
+    .photos {
+      width: 50%;
+      display: inline-block;
+      padding: 5px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
-
-
 }
 
 .mr-30 {
@@ -1135,8 +1138,9 @@ img.img {
   }
 
 }
-.edit-info-modal{
-  .modal-head{
+
+.edit-info-modal {
+  .modal-head {
     font-weight: 500;
     font-size: 18px;
     line-height: 29px;
@@ -1349,19 +1353,21 @@ img.img {
   .modal-body {
     padding: 0 15px;
   }
-  .vertical-line{
+  .vertical-line {
     height: 80px;
-    .line{
+
+    .line {
       transform: rotate(90deg);
     }
   }
   .modal-footer {
     padding: 15px;
   }
-  .modal-news{
+  .modal-news {
     .modal-container {
       width: 100%;
     }
+
     .modal-header {
       font-size: 20px;
       line-height: 130.19%;
@@ -1369,9 +1375,11 @@ img.img {
       padding-left: 15px;
       padding-right: 15px;
     }
+
     .modal-body {
       padding: 0 15px;
     }
+
     .modal-footer {
       padding: 15px;
     }
@@ -1383,7 +1391,6 @@ img.img {
     height: 52vh !important;
   }
 }
-
 
 
 // style of modal window address
