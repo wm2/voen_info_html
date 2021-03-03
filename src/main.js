@@ -8,9 +8,9 @@ import vuetify from './plugins/vuetify';
 import VueAxios from 'vue-axios'
 import './filtres/filters'
 import axios from 'axios'
-import Meta from 'vue-meta'
 
-Vue.use(Meta);
+
+
 Vue.config.productionTip = false;
 Vue.use(VueAxios, axios);
 

@@ -16,7 +16,7 @@
                 </div>
                 <hooper ref="carousel" :settings="hooperSettings" :infiniteScroll="true"
                         style="outline: none !important;">
-                    <slide class="slide-box" v-for="item in news">
+                    <slide class="slide-box" v-for="item in news" :key="item.id">
                         <div class="card-news">
                             <div class="card-news-header">
                                 <img :src='item.imgUrl===null?notFoundImg:item.imgUrl' alt="img" draggable="false">

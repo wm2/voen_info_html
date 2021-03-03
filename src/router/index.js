@@ -2,8 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import BasePage from '../components/site/common/BasePage.vue'
 import Layout from '../components/Layout'
+import Meta from 'vue-meta'
 
 Vue.use(VueRouter);
+Vue.use(Meta)
 
 const routes = [
     {
@@ -107,8 +109,12 @@ const routes = [
         name: 'BasePage',
         component: BasePage,
         children: [
-            {path: '/by-code', name: 'home', component: () => import('../views/Home')},
-            {path: '', name: 'GetMaterialsByCode',component: () => import('../components/site/sections/GetMaterialsByCode.vue')},
+            {path: ':id', name: 'home', component: () => import('../views/Home'), props: true},
+            {
+                path: '',
+                name: 'GetMaterialsByCode',
+                component: () => import('../components/site/sections/GetMaterialsByCode.vue')
+            },
         ]
     }
 ];

@@ -23,10 +23,11 @@
         //             },
         //             // Open Graph / Facebook
         //             { vmid: "og:type", name: "og:type", content: "website" },
+        //             { vmid: "og:locale", name: "og:locale", content: "ru_RU" },
         //             {
         //                 vmid: "og:url",
         //                 name: "og:url",
-        //                 // content: process.env.MIX_APP_URL + this.$router.currentRoute.fullPath,
+        //                 content: "https://voen.info/by-code",
         //             },
         //             {
         //                 vmid: "og:site_name",
@@ -93,17 +94,17 @@
         //         ],
         //     };
         // },
-        metaInfo: {
-            title: 'Default App Title',
-            titleTemplate: '%s | vue-meta Example App',
-            htmlAttrs: {
-                lang: 'en-US'
-            },
-            meta: [
-                { charset: 'utf-8' },
-                { name: 'description', content: 'An example Vue application with vue-meta.' },
-                { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-            ]
-        },
+        // metaInfo: {
+        //     title: 'Default App Title',
+        //     titleTemplate: '%s | vue-meta Example App',
+        //     htmlAttrs: {
+        //         lang: 'en-US'
+        //     },
+        //     meta: [
+        //         { charset: 'utf-8' },
+        //         { name: 'description', content: 'An example Vue application with vue-meta.' },
+        //         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        //     ]
+        // },
     }
 </script>

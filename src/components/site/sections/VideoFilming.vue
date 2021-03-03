@@ -9,7 +9,7 @@
                 <div class="col-12 col-lg-7 col-xl-7">
                     <div class="player-container">
                         <vue-core-video-player :cover="cover" style="height: auto"
-                                               src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></vue-core-video-player>
+                                               src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></vue-core-video-player>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-4">
